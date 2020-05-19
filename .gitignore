@@ -1,0 +1,5 @@
+node_modules
+business_portal/node_modules
+customer_portal/node_modules
+server/node_modules
+.vscode

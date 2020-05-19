@@ -1,0 +1,33 @@
+{
+  "name": "beindian",
+  "version": "1.0.0",
+  "description": "List of products with \"Made IN India\" Tag - an attempt to make people aware of the local brands of different products  - an attempt to lift those local brands to national brands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "business_portal": "cd business_portal && npm start",
+    "customer_portal": "cd customer_portal && npm start",
+    "server": "cd server && nodemon index.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanhaboi/beIndian.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanhaboi/beIndian/issues"
+  },
+  "homepage": "https://github.com/kanhaboi/beIndian#readme",
+  "devDependencies": {
+    "husky": "^4.2.5"
+  },
+  "dependencies": {
+    "lint-staged": "^10.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
