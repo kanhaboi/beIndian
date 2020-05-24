@@ -23,7 +23,13 @@
     "husky": "^4.2.5"
   },
   "dependencies": {
-    "lint-staged": "^10.2.4"
+    "bootstrap": "^4.5.0",
+    "lint-staged": "^10.2.4",
+    "pnpm": "^4.14.2",
+    "react-bootstrap": "^1.0.1",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.1.20",
+    "react-router-dom": "^5.2.0"
   },
   "husky": {
     "hooks": {

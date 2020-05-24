@@ -2,11 +2,13 @@ importers:
   .:
     dependencies:
       lint-staged: 10.2.4
+      pnpm: 4.14.2
     devDependencies:
       husky: 4.2.5
     specifiers:
       husky: ^4.2.5
       lint-staged: ^10.2.4
+      pnpm: ^4.14.2
   business_portal:
     dependencies:
       '@testing-library/jest-dom': 4.2.4
@@ -8333,6 +8335,13 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
+  /pnpm/4.14.2:
+    dev: false
+    engines:
+      node: '>=10.13'
+    hasBin: true
+    resolution:
+      integrity: sha512-srFTvu4mm2tzo+bt1QkahH3JJnBDXPbjboYOPSZRwocoyGcTxYgGr0aUHg6non0i8eFzbhUFqQiqG+iCJ5spbA==
   /portfinder/1.0.26:
     dependencies:
       async: 2.6.3
