@@ -2,37 +2,44 @@ import React, { Component } from "react";
 import GoogleBtn from "./GoogleBtn";
 export default class Login extends Component {
 
-render() {
+    render() {
         return (
             <>
-            <form>
-                <h3>Sign In</h3>
+                <form>
+                    <h3>Sign In</h3>
 
-                <div className="form-group d-flex">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
-
-                <div className="form-group d-flex">
-                    <label>Password  </label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-
-                <div className="form-group d-flex">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    <div className="form-group d-flex">
+                        <label>Email address</label>
+                        <input type="email" className="form-control" placeholder="Enter email" />
                     </div>
-                </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot password?
+                    <div className="form-group d-flex">
+                        <label>Password  </label>
+                        <input type="password" className="form-control" placeholder="Enter password" />
+                    </div>
+
+                    <div className="form-group d-flex">
+                        <div className="custom-control custom-checkbox">
+                            <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                            <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                    <p className="forgot-password text-right">
+                        Forgot password?
                 </p>
-            </form>
-            <div>
-             <GoogleBtn/>
-            </div>
+                </form>
+                <div>
+                    <GoogleBtn />
+                </div>
+                <div>
+                    <button>
+                        <a href="http://localhost:5000/auth/google">
+                            Login  With Google
+                        </a>
+                    </button>
+                </div>
             </>
         );
     }
