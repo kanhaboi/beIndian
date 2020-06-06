@@ -4,7 +4,16 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 const passport = require("passport");
 const passportAuthenicate = require("./routes/login_google/passport_config.js");
-require('dotenv').config();
+const mongoose = require("mongoose");
+mongoose.connect("mongodb://127.0.0.1:27017/admin", {
+    useNewUrlParser: true,
+    user: "beindian",
+    pass: "beindian"
+}).then(() => {
+    console.log('successfully connected to the database');
+}).catch(err => {
+    console.log('error connecting to the database', err);
+});
 app.use(cors());
 app.use(bodyParser());
 app.use(passport.initialize())

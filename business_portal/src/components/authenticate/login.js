@@ -8,7 +8,7 @@ class Login extends Component {
             <div>
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">Enail</span>
+                        <span class="input-group-text">Email</span>
                     </div>
                     <input type="email" class="form-control" aria-label="With textarea" />
                 </div>
